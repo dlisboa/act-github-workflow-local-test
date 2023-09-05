@@ -1,0 +1,12 @@
+name: Foo workflow
+
+on:
+  push:
+    - main
+
+jobs:
+  do-something:
+    runs-on: ubuntu
+    steps:
+      - name: echo out things
+        run: echo "things!"
